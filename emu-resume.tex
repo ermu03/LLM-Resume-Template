@@ -1,0 +1,73 @@
+% !TeX TS-program = xelatex
+\documentclass{resume-photo}
+
+% 字体（Overleaf 推荐用 Noto 系列，避免 SimSun 缺失）
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{fontspec}
+
+% 紧凑排版
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=2pt, topsep=2pt}
+
+\ResumeName{张栓槐}
+\ResumePhoto{二木证件照03.jpg}
+
+\begin{document}
+
+\ResumeContacts{
+  13534865721,%
+  \ResumeUrl{mailto:ermu003@hnu.edu.cn}{ermu003@hnu.edu.cn},%
+  \textnormal{广东 | 湖南大学 | 工商管理学院 | 信息管理与信息系统}%
+}
+
+\ResumeTitle
+
+% ====================== 简介 ======================
+\noindent 湖南大学信息管理与信息系统专业本科在读（2022.09—2026.06），年级排名 4/55，GPA 3.77/4.0；已获华南理工大学软件工程推免资格（2026.09 入学）。具备面向医疗场景的 GraphRAG + Stateful Agent 项目实战经验，能独立完成开源项目复现与工程问题排查，关注大模型应用落地与检索增强方向。
+
+% ====================== 教育 ======================
+\section{教育背景}
+\ResumeItem
+{华南理工大学（985/211/双一流）}
+[\textnormal{软件学院 | 软件工程（推免）}]
+[2026.09—2029.06]
+
+\ResumeItem
+{湖南大学（985/211/双一流）}
+[\textnormal{工商管理学院 | 信息管理与信息系统 | GPA: 3.77/4.0 | 排名: 4/55}]
+[2022.09—2026.06]
+
+% ====================== 项目 ======================
+\section{项目经历}
+
+\ResumeItem{面向糖尿病领域的个性化 GraphRAG 智能体问答系统}
+[\textnormal{核心技术栈：Python, FastAPI, PostgreSQL, Neo4j, Milvus, LLM Function Calling}]
+[2025.12—2026.02]
+
+\begin{itemize}
+  \item 项目面向糖尿病医疗知识问答场景，基于 GraphRAG 检索引擎与 Stateful Agent 多级记忆机制，实现对用户健康信息、偏好与历史问答上下文的长期记忆与个性化回复。
+  \item 从 0 到 1 搭建 Agent 记忆与状态管理机制：将用户画像等常驻信息与历史对话进行分层管理，结合 FIFO 滑动队列与超限驱逐策略，支持跨会话记忆存取与状态隔离。
+  \item 主导 Agent 推理主循环与工具调度编排，完成 LLM 意图理解、任务拆解与 Function Calling 执行联动；支持 naive / local / global / hybrid 检索策略动态路由。
+  \item 设计并实现 GraphRAG 在线检索流程与重排机制：融合 Milvus 向量检索与 Neo4j 图检索结果，结合 Reranker 提升复杂医疗问题下的召回精度与事实一致性。
+  \item 独立落地离线数据管道：打通 Markdown 切片、实体关系抽取、Neo4j+Milvus 双库写入；结合 Neo4j GDS Leiden 聚类与 LLM 社区摘要增强全局检索能力。
+\end{itemize}
+
+% ====================== 技能 ======================
+\section{专业技能}
+\begin{itemize}
+  \item 编程与工具：熟悉 Python、Java、Markdown；能够借助远程服务器与 GPU 资源自主复现开源项目并定位关键技术问题。
+  \item 大模型应用：具备 GraphRAG 与 Agent 系统工程实践，熟悉 Function Calling、多策略检索编排与知识增强问答落地。
+  \item 英语能力：CET-4 440，CET-6 469，IELTS 6.0。
+\end{itemize}
+
+% ====================== 荣誉 ======================
+\section{奖项荣誉}
+\begin{itemize}
+  \item 湖南大学二等学业奖学金。
+  \item 湖南省电子商务大赛跨境专项赛：省级一等奖。
+  \item 全国大学生财务大数据应用能力大赛：省级二等奖。
+  \item 湖南大学冬季杯数学建模竞赛：校级二等奖。
+\end{itemize}
+
+\end{document}
