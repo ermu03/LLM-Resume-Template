@@ -15,18 +15,25 @@
 
 \begin{document}
 
-\ResumeContacts{
-  13534865721,%
-  \ResumeUrl{mailto:ermu003@hnu.edu.cn}{ermu003@hnu.edu.cn},%
-  \textnormal{广东 \\ 湖南大学 | 工商管理学院 | 信息管理与信息系统}%
-}
-
-\ResumeTitle
-
-% ====================== 求职 ======================
-\section{求职意向}
-\noindent Agent 应用开发实习生\\
-\noindent 可连续实习 5 个月以上
+\vspace*{-1.0cm}
+\noindent
+\begin{minipage}[t]{0.16\textwidth}
+  \mbox{}
+\end{minipage}
+\begin{minipage}[t]{0.68\textwidth}
+  \begin{center}
+    {\zihao{-2} \heiti 张栓槐}\par
+    \vspace{0.25em}
+    Phone: 13534865721 |~ Email: \ResumeUrl{mailto:ermu003@hnu.edu.cn}{ermu003@hnu.edu.cn} \par
+    Github: \ResumeUrl{https://github.com/ermu03}{github.com/ermu03} \par
+    求职意向:~ Agent 应用开发实习生 ~|~ 一周在岗 5 天 ~|~ 可连续实习 5 个月以上
+  \end{center}
+\end{minipage}
+\begin{minipage}[t]{0.16\textwidth}
+  \raggedleft
+  \includegraphics[width=1.8cm]{二木证件照03.jpg}
+\end{minipage}
+\vspace{-0.4em}
 
 
 % ====================== 教育 ======================
@@ -47,7 +54,7 @@
 \ResumeItem{面向糖尿病领域的个性化 GraphRAG 智能体问答系统（毕业设计｜独立完成）}
 []
 [2025.11—2026.02]
-\noindent\textit{核心技术栈：Python, FastAPI, PostgreSQL, Neo4j, Milvus}
+\noindent\textit{核心技术栈：Python, FastAPI, PostgreSQL, Neo4j, Milvus}\par
 
 
 \begin{itemize}
@@ -58,10 +65,24 @@
   \item 独立落地离线数据管道：打通 Markdown 文档切片、实体关系抽取、Neo4j+Milvus 双库写入；结合 Neo4j GDS Leiden 社区划分与 LLM 社区摘要，提升系统对全局关联信息的获取与整合能力。
 \end{itemize}
 
+\ResumeItem{基于 YOLOv8 的时钟表盘识别与指针角度计算（独立完成）}
+[]
+[2025.04—2025.05]
+\noindent\textit{核心技术栈：Python, PyTorch, YOLOv8-seg, OpenCV}\par
+
+\begin{itemize}
+  \item 面向时钟图像时间读取与工业视觉分析场景，构建表盘与指针自动识别流程，实现指针角度提取与结果可视化输出。
+  \item 独立完成 249 张图像的时针/分针掩码标注与数据集构建，训练并对比 YOLOv8s/m/l-seg 三个模型，最终选定 YOLOv8s-seg 作为部署模型。
+  \item 在 361 张测试图上达到完美检测率 63.2\%、准确率 85.9\%；设计对角线比较法与长边方向法结合的双路径角度计算方案，将角度误差控制在 1° 以内。
+  \item 设计椭圆拟合与长短轴比例判定机制，对倾斜表盘进行几何校正（仿射变换），并结合多策略指针方向提取方法提升复杂图像下的鲁棒性。
+\end{itemize}
+
 % ====================== 技能 ======================
 \section{专业技能}
 \begin{itemize}
   \item 工程能力：熟悉 Python、Java；能够借助远程服务器与 GPU 资源自主复现开源项目并定位关键技术问题。
+  \item 协作开发：熟悉 Git 版本控制与常用协作流程，具备团队协作开发经验。
+  \item 开发环境：具备 Linux 环境下开发与调试经验，使用过 Docker 进行项目环境搭建与服务运行。
   \item LLM 应用实践：具备 GraphRAG 与 Agent 系统的工程实践经验，熟悉 Function Calling、检索策略设计与知识增强问答落地。
   \item 英语能力：CET-4 440，CET-6 469，IELTS 6.0。
 \end{itemize}
